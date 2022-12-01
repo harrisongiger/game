@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class navMeshScript : MonoBehaviour
+public class MeleeEnemy : MonoBehaviour
 {
     public Transform player;
     ThirdPersonPlayerController pc;
