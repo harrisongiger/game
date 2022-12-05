@@ -12,6 +12,9 @@ public class RangedEnemy : MonoBehaviour
     private float distToPlayer;
     public float viewRange = 1;
     public float shootRange = .75f;
+    
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +30,17 @@ public class RangedEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        NavMeshHit hit;
+        if (!agent.Raycast(player.position, out hit))
+        {
+            shoot();
+        }
+
         distToPlayer = Vector3.Distance(player.position, transform.position);
 
         if (distToPlayer <= viewRange)
         {
-            if (distToPlayer >= viewRange)
+            if (distToPlayer >= shootRange)
             {
                 agent.SetDestination(player.position);
                 
@@ -40,5 +49,10 @@ public class RangedEnemy : MonoBehaviour
                 agent.ResetPath();
             }
         }
+    }
+
+    void shoot()
+    {
+        //shoot
     }
 }
