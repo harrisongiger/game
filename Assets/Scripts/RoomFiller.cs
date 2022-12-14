@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class RoomFiller
 {
-    public GameObject roomModel;
+    public GameObject roomModel; // Prefab
     public int NorthType;
     public int EastType;
     public int SouthType;
