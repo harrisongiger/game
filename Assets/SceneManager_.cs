@@ -27,6 +27,11 @@ public class SceneManager_ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene("Dude");
+        }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             

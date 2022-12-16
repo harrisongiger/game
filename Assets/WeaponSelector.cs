@@ -6,13 +6,15 @@ public class WeaponSelector : MonoBehaviour
 {
     public GameObject[] itemSlots;
     GameObject closest;
-    
+    static WeaponSelector instance;
 
    
     public GameObject itemBeingEquipped;
     Collider collider;
 
     // Start is called before the first frame update
+
+  
     void Start()
     {
         collider = gameObject.GetComponent<Collider>();     
