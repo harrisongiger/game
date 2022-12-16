@@ -18,7 +18,7 @@ public class RoomFiller
 
 
     // construct class based on inputs
-    RoomFiller(GameObject inRoomModel, int inNorth, int inEast, int inSouth, int inWest)
+    public RoomFiller(GameObject inRoomModel, int inNorth, int inEast, int inSouth, int inWest)
     {
         roomModel = inRoomModel;
         NorthType = inNorth;
