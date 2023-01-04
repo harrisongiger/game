@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731689, g: 0.13414702, b: 0.1210784, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -565,7 +565,6 @@ GameObject:
   m_Component:
   - component: {fileID: 349163966}
   - component: {fileID: 349163965}
-  - component: {fileID: 349163967}
   m_Layer: 0
   m_Name: RoomGenerator
   m_TagString: Untagged
@@ -585,12 +584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa9ccf047c344884b21207f431c02f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingRoom: {fileID: 919132148112631336}
-  cornerRoom: {fileID: 919132149155446097, guid: b7e3c0baae45149839caddbab6c907d1, type: 3}
-  oneDoorRoom: {fileID: 919132149155446097, guid: 8a78d0aa6b47c4dde9fd1b954dbfb512, type: 3}
-  twoDoorRoom: {fileID: 919132149155446097, guid: aa506b5e32faf4de7817afe4f447baa1, type: 3}
-  threeDoorRoom: {fileID: 919132149155446097, guid: 2e07fee260d184c09b357f6a573aba43, type: 3}
-  fourDoorRoom: {fileID: 919132149155446097, guid: 8d5f1c8663124498fbfede198ab7b3be, type: 3}
 --- !u!4 &349163966
 Transform:
   m_ObjectHideFlags: 0
@@ -606,20 +599,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &349163967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349163964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e21dc14e5de54e3d9f03d386014a177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 919132148112631336}
-  roomCenter: {fileID: 620211128}
 --- !u!1001 &370548866
 PrefabInstance:
   m_ObjectHideFlags: 0
